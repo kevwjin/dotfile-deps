@@ -24,6 +24,7 @@
             (import ./modules/tmux { inherit pkgs; })
             (import ./modules/yabai { inherit pkgs; })
             (import ./modules/skhd { inherit pkgs; })
+            (import ./modules/sketchybar { inherit pkgs; })
           ];
         };
       });
