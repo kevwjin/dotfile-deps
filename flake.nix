@@ -9,7 +9,7 @@
     };
   };
   
-  outputs = { self, nixpkgs, flake-utils, powerlevel10k }:
+  outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system: 
       let
         pkgs = import nixpkgs {
@@ -22,9 +22,6 @@
           paths = [
             (import ./modules/nvim { inherit pkgs; })
             (import ./modules/tmux { inherit pkgs; })
-            (import ./modules/yabai { inherit pkgs; })
-            (import ./modules/skhd { inherit pkgs; })
-            (import ./modules/sketchybar { inherit pkgs; })
           ];
         };
       });
