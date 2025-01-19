@@ -13,6 +13,6 @@
         };
       in
       {
-        packages.default = import ./modules/neovim { inherit pkgs; };
+        packages.default = import ./modules/nvim { inherit pkgs; };
       });
 }
