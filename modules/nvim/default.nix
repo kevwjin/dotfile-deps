@@ -9,7 +9,8 @@ pkgs.symlinkJoin {
     libgcc                        # for c-family lsps
     gnumake                       # for c-family lsps
     nodejs_22                     # for js-family lsps
-    python312Packages.python      # for pyright
+    python3                       # for pyright
     python312Packages.pip         # for pyright
+    cargo
   ];
 }
