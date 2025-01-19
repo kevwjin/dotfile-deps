@@ -21,7 +21,7 @@
             (import ./modules/zsh { inherit pkgs; })
             (import ./modules/ssh { inherit pkgs; })
             (import ./modules/git { inherit pkgs; })
-            (import ./modules/bitwarden-cli { inherit pkgs; })
+            (import ./modules/rbw { inherit pkgs; })
           ];
         };
       });
