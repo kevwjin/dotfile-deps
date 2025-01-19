@@ -22,6 +22,8 @@
           paths = [
             (import ./modules/nvim { inherit pkgs; })
             (import ./modules/tmux { inherit pkgs; })
+            (import ./modules/yabai { inherit pkgs; })
+            (import ./modules/skhd { inherit pkgs; })
           ];
         };
       });
