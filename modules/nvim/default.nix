@@ -11,6 +11,6 @@ pkgs.symlinkJoin {
     nodejs_22                     # for js-family lsps
     python3                       # for pyright
     python312Packages.pip         # for pyright
-    cargo
+    cargo                         # for nil (nix lsp)
   ];
 }
