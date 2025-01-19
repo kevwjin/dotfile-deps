@@ -3,6 +3,6 @@
 pkgs.symlinkJoin {
   name = "bitwarden-cli-deps";
   paths = with pkgs; [
-    nodePackages.bitwarden-cli
+    rbw
   ];
 }
