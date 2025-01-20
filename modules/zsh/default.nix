@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, oh-my-zsh }:
 
 pkgs.symlinkJoin {
   name = "zsh-deps";
