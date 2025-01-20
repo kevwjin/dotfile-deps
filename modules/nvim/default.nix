@@ -12,5 +12,6 @@ pkgs.symlinkJoin {
     python3                       # for pyright
     python312Packages.pip         # for pyright
     cargo                         # for nil (nix lsp)
+    lazygit                       # for lazygit.nvim
   ];
 }
