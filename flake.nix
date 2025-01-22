@@ -21,7 +21,7 @@
           ZSH_THEME="powerlevel10k/powerlevel10k"
           
           # Source oh-my-zsh before any other configurations
-          source $ZSH/oh-my-zsh.sh
+          source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
           
           # setup dir env with direnv
           emulate ${pkgs.zsh}/bin/zsh -c \
