@@ -25,9 +25,10 @@
             pkgs.chezmoi
             pkgs.git
             pkgs.rbw
+            pkgs.pinentry_mac
 
             # additional tools
-            pkgs.coreutils
+            pkgs.uutils-coreutils-noprefix
             pkgs.ripgrep
             pkgs.fd
             pkgs.jq         # used in yabai
