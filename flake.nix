@@ -22,10 +22,14 @@
             (import ./modules/tmux { inherit pkgs; })
             (import ./modules/zsh { inherit pkgs; })
             (import ./modules/ssh { inherit pkgs; })
+            pkgs.age
+
+            # # rbw deps
+            # pkgs.rbw
+            # pkgs.pinentry-tty
+
             pkgs.chezmoi
             pkgs.git
-            pkgs.rbw
-            pkgs.pinentry_mac
 
             # additional tools
             pkgs.uutils-coreutils-noprefix
