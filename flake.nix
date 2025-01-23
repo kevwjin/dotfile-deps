@@ -17,6 +17,8 @@
         packages.default = pkgs.symlinkJoin {
           name = "dotfile-pkgs";
           paths = with pkgs; [
+            hello
+
             # cli utils
             uutils-coreutils-noprefix
             openssh
