@@ -52,6 +52,11 @@
             # tmux config deps
             tmux
             tmuxPlugins.continuum       # includes tmux resurrect
+
+            # rbw deps
+            rbw
+            pinentry-tty
+
           ];
         };
       });
