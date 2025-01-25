@@ -18,6 +18,7 @@
           name = "dotfile-pkgs";
           paths = with pkgs; [
             hello
+            neofetch
 
             # cli utils
             uutils-coreutils-noprefix
