@@ -43,13 +43,14 @@
             neovim
             fzf                         # for telescope.nvim
             unzip                       # for telescope.nvim and fzf
+            lazygit                     # for lazygit.nvim
             libgcc                      # for c-family lsps
             gnumake                     # for c-family lsps
             nodejs_22                   # for js-family lsps
             python3                     # for pyright
             python312Packages.pip       # for pyright
-            cargo                       # for nil (nix lsp)
-            lazygit                     # for lazygit.nvim
+            cargo                       # for nix lsp
+            zls
 
             # tmux config deps
             tmux
