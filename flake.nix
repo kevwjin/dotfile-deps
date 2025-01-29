@@ -31,6 +31,7 @@
             gnutar
             ripgrep
             fd
+            aider-chat
 
             # zsh config deps
             zsh
