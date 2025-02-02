@@ -31,6 +31,7 @@
             gnutar
             ripgrep
             fd
+            jellyfin-ffmpeg
             aider-chat
 
             # zsh config deps
