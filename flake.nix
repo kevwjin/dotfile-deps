@@ -21,7 +21,7 @@
             neofetch
 
             # cli utils
-            uutils-coreutils-noprefix
+            coreutils
             openssh
             age
             git
