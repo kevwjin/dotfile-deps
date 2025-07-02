@@ -10,6 +10,9 @@
       let
         pkgs = import nixpkgs {
           inherit system;
+          config = {
+            allowUnfree = true;
+          };
         };
 
       in
@@ -32,7 +35,10 @@
             ripgrep
             fd
             jellyfin-ffmpeg
-            aider-chat
+            postgresql
+            claude-code
+            yt-dlp
+            ffmpeg
 
             # zsh config deps
             zsh
