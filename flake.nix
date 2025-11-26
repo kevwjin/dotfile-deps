@@ -20,6 +20,7 @@
         packages.default = pkgs.symlinkJoin {
           name = "dotfile-pkgs";
           paths = with pkgs; [
+            kitty
             hello
             neofetch
 
@@ -28,6 +29,7 @@
             openssh
             age
             git
+            gh
             chezmoi
             tree
             jq                          # used in yabai
@@ -43,6 +45,7 @@
             # zsh config deps
             zsh
             direnv
+            nix-direnv
             oh-my-zsh
             zsh-powerlevel10k
 
@@ -55,6 +58,7 @@
             gnumake                     # for c-family lsps
             nodejs_22                   # for js-family lsps
             python3                     # for pyright
+            uv
             python312Packages.pip       # for pyright
             cargo                       # for nix lsp
             zls
