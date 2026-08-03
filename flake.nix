@@ -4,9 +4,9 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
   };
-  
+
   outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system: 
+    flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs {
           inherit system;
@@ -25,8 +25,11 @@
             neofetch
 
             # cli utils
+            awscli2
+            terraform
             coreutils
             openssh
+            inetutils
             age
             git
             gh
@@ -41,6 +44,9 @@
             claude-code
             yt-dlp
             ffmpeg
+            pandoc
+            tectonic
+            poppler-utils
 
             # zsh config deps
             zsh
@@ -61,7 +67,9 @@
             uv
             python312Packages.pip       # for pyright
             cargo                       # for nix lsp
+            rustc
             zls
+            go
 
             # tmux config deps
             tmux
@@ -71,6 +79,7 @@
             rbw
             pinentry-tty
 
+            supabase-cli
           ];
         };
       });
